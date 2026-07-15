@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Drive Viewer Auth</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 40px; background: #111; color: #eee;">
+  <p id="msg">Anmeldung wird abgeschlossen…</p>
+  <script>
+    var params = window.location.search || window.location.hash.replace('#', '?');
+    var deepLink = 'com.laend.driveviewer:/oauth2redirect' + params;
+    document.getElementById('msg').textContent = 'Weiterleitung zur App…';
+    window.location.href = deepLink;
+  </script>
+</body>
+</html>
