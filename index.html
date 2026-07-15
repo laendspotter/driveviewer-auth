@@ -8,7 +8,7 @@
   <p id="msg">Anmeldung wird abgeschlossen…</p>
   <script>
     var params = window.location.search || window.location.hash.replace('#', '?');
-    var deepLink = 'com.laend.driveviewer:/oauth2redirect' + params;
+    var deepLink = 'com.laend.driveviewer://oauth2redirect' + params;
     document.getElementById('msg').textContent = 'Weiterleitung zur App…';
     window.location.href = deepLink;
   </script>
